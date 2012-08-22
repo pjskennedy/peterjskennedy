@@ -1,0 +1,26 @@
+<form class="form-horizontal">
+  <fieldset>
+    <legend>Email Peter!</legend>
+    <div class="control-group">
+      <label class="control-label" for="name">Name</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="name">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="email">Email</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="email">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="email-body">* Email Body</label>
+        <div class="controls">
+          <textarea id="email-body" type="textarea" rows="10" cols="1000"></textarea>
+          <p class="help-block"></p>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn" id="send-email">Send Email!</button>
+  </fieldset>
+</form>

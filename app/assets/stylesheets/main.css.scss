@@ -1,0 +1,36 @@
+.main-body{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navigation {
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.nav-heading {
+  font-family:"ProximaNovaLtRegular";
+  width:200px;
+  float:left;
+  padding:20px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 20px;
+  text-align:center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border-color: black;
+}
+
+.icon {
+  width:auto;
+  height:16px;
+  float:right;
+}
+
+.hidden {
+  visibility:hidden;
+}
