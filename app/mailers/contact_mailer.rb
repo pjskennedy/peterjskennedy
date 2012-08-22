@@ -5,7 +5,7 @@ class ContactMailer < ActionMailer::Base
     @body = body
     mail(
       :from => @email,
-      :to => "Peter Kennedy <peter.kennedy@ven.io>", 
+      :to => "Peter Kennedy <peter_1_k@hotmail.com>", 
       :subject => "Inquiries! - " + @name
     ).deliver
   end
