@@ -3,6 +3,6 @@ class EmailController < ApplicationController
 
   def create
     ContactMailer.email_peter(params[:email][:address], params[:email][:name], params[:email][:body])
-    respond_with Email.create!(params[:email])
+    respond_with Email.create(params[:email])
   end
 end

@@ -46,4 +46,10 @@ class Personal.Views.Main extends Backbone.View
     @email.attributes.address = $("#email").val()
     @email.attributes.name    = $("#name").val()
     @email.attributes.body    = $("#email-body").val()
-    @email.save()
+    @email.save( success: @emailSent error: @emailFailed)
+
+  emailSent: () =>
+    alert 'Email sent successfully'
+
+  emailFailed: () =>
+    alert 'Email sent successfully'
