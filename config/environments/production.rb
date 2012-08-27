@@ -52,12 +52,12 @@ Personal::Application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   ActionMailer::Base.smtp_settings = {
-    :address => 'smtp.live.com',
+    :address => "smtp.gmail.com",
     :port => 587,
-    :domain => 'hotmail.com',
+    :domain => 'gmail.com',
     :authentication => :plain,
-    :user_name => 'peter_1_k@hotmail.com',
-    :password => 'butweatbutweat'
+    :user_name => 'peter.kennedy.inquiries@gmail.com',
+    :password => 'Simple12'
   }
 
   # Enable threaded mode
