@@ -2,8 +2,6 @@ Personal::Application.routes.draw do
   get "home/index"
 
   resources :main
-  resources :about
-  resources :user
   resources :email
 
 
@@ -32,6 +30,12 @@ Personal::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+
+  get '/contact' => 'home#index'
+  get '/contact/' => 'home#index'
+  get '/engineering' => 'home#index'
+  get '/engineering/' => 'home#index'
+
 
   # Sample resource route with sub-resources:
   #   resources :products do
@@ -63,4 +67,7 @@ Personal::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  unless Rails.application.config.consider_all_requests_local
+    match '*not_found', to: 'errors#error_404'
+  end
 end

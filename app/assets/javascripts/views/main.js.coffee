@@ -8,10 +8,6 @@ class Personal.Views.Main extends Backbone.View
 
   render: () ->
     $(@el).html(@template())
-    @current_page = "about"
-    @renderAbout()
-    @$("#about").removeClass('nav-text-deselected')
-    @$("#about").addClass('nav-text-selected')    
     this
 
   renderPage: (view) ->
@@ -20,22 +16,29 @@ class Personal.Views.Main extends Backbone.View
     )
 
   renderAbout: () ->
+    @current_page = "about"
     @$(".nav-text").removeClass('nav-text-selected')
     $("#about").addClass('nav-text-selected')
     intro = new Personal.Views.Intro()
     @renderPage(intro)
+    Backbone.history.navigate("/", false)
 
   renderEngineering: () ->
+    @current_page = "engineering"
     @$(".nav-text").removeClass('nav-text-selected')
     $("#engineering").addClass('nav-text-selected')
     engineering = new Personal.Views.Engineering()
     @renderPage(engineering)
+    Backbone.history.navigate("/engineering", false)
+
 
   renderContact: () ->
+    @current_page = "contact"
     @$(".nav-text").removeClass('nav-text-selected')
     $("#contact").addClass('nav-text-selected')
     contact = new Personal.Views.Contact()
     @renderPage(contact)
+    Backbone.history.navigate("/contact", false)
 
   renderNewPage: (event) =>
     page = $(event.currentTarget).data('page')
@@ -45,4 +48,3 @@ class Personal.Views.Main extends Backbone.View
       @renderEngineering()
     if page == "contact" and @current_page != "contact"
       @renderContact()
-    @current_page = page

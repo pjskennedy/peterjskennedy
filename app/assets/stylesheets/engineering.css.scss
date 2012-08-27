@@ -9,3 +9,14 @@
   line-height:150% ;
   font-size: 23px;
 }
+
+p {
+  font-family:"ProximaNovaLtRegular";
+  text-shadow: 1px 2px 30px #000000;
+  filter: dropshadow(color=#000000, offx=1, offy=2);
+  color: black;
+  line-height:150% ;
+  font-size: 23px;
+  margin-left:20px;
+  margin-right: 20px;
+}

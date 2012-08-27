@@ -4,7 +4,7 @@ window.Personal =
   Views: {}
   Routers: {}
   init: ->
-    new Personal.Routers.PersonalRouter
+    new Personal.Routers.PersonalRouter()
     Backbone.history.start({pushState: true})
     
 $(document).ready ->
