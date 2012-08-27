@@ -14,7 +14,7 @@ class Personal.Views.Main extends Backbone.View
     @$("#main-body").hide('slide', {direction: 'up', easing: 'swing', duration: 300}, () ->
       $("#main-body").html(view.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
     )
-
+    
   renderAbout: () ->
     @current_page = "about"
     @$(".nav-text").removeClass('nav-text-selected')
@@ -30,7 +30,6 @@ class Personal.Views.Main extends Backbone.View
     engineering = new Personal.Views.Engineering()
     @renderPage(engineering)
     Backbone.history.navigate("/engineering", false)
-
 
   renderContact: () ->
     @current_page = "contact"
