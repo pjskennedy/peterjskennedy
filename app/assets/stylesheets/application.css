@@ -17,3 +17,15 @@ body {
   background: url("black_twill.png");
   background-repeat: true;
 }
+
+.404 {
+  background-color: white;
+  margin:50px;
+  padding:50px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "ProximaNovaLtRegular";
+  text-align: center;
+  font-size: 40px;
+}

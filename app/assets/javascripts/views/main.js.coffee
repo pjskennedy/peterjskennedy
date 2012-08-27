@@ -47,3 +47,11 @@ class Personal.Views.Main extends Backbone.View
       @renderEngineering()
     if page == "contact" and @current_page != "contact"
       @renderContact()
+
+  render404: () ->
+    @current_page = "404"
+    @$(".nav-text").removeClass('nav-text-selected')
+    page_404 = new Personal.Views.Notfound()
+    $("#main-body").html(page_404.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
+    Backbone.history.navigate("/not_found", false)
+
