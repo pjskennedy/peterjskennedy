@@ -1,55 +1,48 @@
 class Personal.Views.Main extends Backbone.View
 
   events:
-    'mouseenter .nav-heading': 'selectItem'
-    'mouseleave .nav-heading': 'deselectItem'
-    'click .nav-heading': 'routeToPage'
-    'click #send-email': 'sendEmail'
+    'click  .nav-heading' : 'renderNewPage'
 
   template: JST['main']
-  brief_intro: JST['brief_intro']
-  about: JST['about']
-  contact: JST['contact']
 
-  initialize: () -> 
-    @email = new Personal.Models.Email
 
   render: () ->
     $(@el).html(@template())
+    @current_page = "about"
+    @renderAbout()
+    @$("#about").removeClass('nav-text-deselected')
+    @$("#about").addClass('nav-text-selected')    
     this
 
-  selectItem: (event) =>
-    $(event.currentTarget).children(".icon").removeClass('hidden')
+  renderPage: (view) ->
+    @$("#main-body").hide('slide', {direction: 'up', easing: 'swing', duration: 300}, () ->
+      $("#main-body").html(view.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
+    )
 
-  deselectItem: (event) =>
-    $(event.currentTarget).children(".icon").addClass('hidden')
+  renderAbout: () ->
+    @$(".nav-text").removeClass('nav-text-selected')
+    $("#about").addClass('nav-text-selected')
+    intro = new Personal.Views.Intro()
+    @renderPage(intro)
 
-  routeToPage: (event) =>
-    page = $(event.currentTarget).attr('page')
-    if page == "about"
-      console.log page
-      # route to about
-    else if page == "engineering"
-      console.log page
+  renderEngineering: () ->
+    @$(".nav-text").removeClass('nav-text-selected')
+    $("#engineering").addClass('nav-text-selected')
+    engineering = new Personal.Views.Engineering()
+    @renderPage(engineering)
 
-      # route to engineering
-    else if page == "contact"
-      console.log page
+  renderContact: () ->
+    @$(".nav-text").removeClass('nav-text-selected')
+    $("#contact").addClass('nav-text-selected')
+    contact = new Personal.Views.Contact()
+    @renderPage(contact)
 
-      $('.main-body').html(@contact())
-    else if page == "site"
-      console.log page
-      #  route to site
-
-  sendEmail: (event) =>
-    event.preventDefault()
-    @email.attributes.address = $("#email").val()
-    @email.attributes.name    = $("#name").val()
-    @email.attributes.body    = $("#email-body").val()
-    @email.save( success: @emailSent error: @emailFailed)
-
-  emailSent: () =>
-    alert 'Email sent successfully'
-
-  emailFailed: () =>
-    alert 'Email sent successfully'
+  renderNewPage: (event) =>
+    page = $(event.currentTarget).data('page')
+    if page == "about" and @current_page != "about"
+      @renderAbout()
+    if page == "engineering" and @current_page != "engineering"
+      @renderEngineering()
+    if page == "contact" and @current_page != "contact"
+      @renderContact()
+    @current_page = page

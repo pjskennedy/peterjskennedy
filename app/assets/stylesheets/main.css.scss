@@ -1,36 +1,89 @@
-.main-body{
-  width:1000px;
-  margin-left:auto;
-  margin-right:auto;
+#navigation-container {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height:200px;
+  background: url("../assets/Untitled-3.png");
+  -webkit-box-shadow:  0px 10px 15px 6px rgba(10, 10, 10, 0.6);
+  box-shadow:  0px 10px 15px 6px rgba(10, 10, 10, 0.6);
+}
+
+#title {
+  padding-top: 50px;
+  font-size: 80px;
+  width: 100%;
+  font-family: 'Comfortaa-Light';
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0px 10px 20px #000000;
+  filter: dropshadow(color=#000000, offx=0, offy=10);
+}
+
+body {
+  background: url("black_twill.png");
+  background-repeat: true;
+}
+
+#main-body {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation {
-  width:1000px;
-  margin-left:auto;
-  margin-right:auto;
+  width: 900px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-heading {
-  font-family:"ProximaNovaLtRegular";
-  width:200px;
+  cursor:pointer;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   float:left;
-  padding:20px;
-  margin-left:auto;
-  margin-right:auto;
-  font-size: 20px;
-  text-align:center;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  border-color: black;
+  margin-bottom: 20px;
 }
 
-.icon {
-  width:auto;
-  height:16px;
-  float:right;
+.nav-text {
+  font-family: "ProximaNovaLtRegular";
+  text-align: center;
+  font-size: 40px;
+  background:none;
+  color:black;
 }
 
-.hidden {
-  visibility:hidden;
+.nav-text-selected {
+  font-size: 40px;
+  text-shadow: 0px 4px 10px #000000;
+  filter: dropshadow(color=#000000, offx=0, offy=0);
+  color:white;
+  font-style:bold;
 }
+
+.page-within {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-border-radius: 0px 0px 40px 40px;
+  border-radius: 0px 0px 40px 40px;
+  background: url("../assets/purty_wood.png");
+  margin-top:1px;
+  padding: 50px;
+  padding-top:70px;
+}
+
+.main-body-shadow {
+  width: 100%;
+  height: 50px;
+  position:absolute; 
+  z-index: 1;
+  background:url("../assets/shadow.png");
+  background-repeat:repeat-x;
+}
+
+
+
+

@@ -1,7 +1,7 @@
 class ContactMailer < ActionMailer::Base
   def email_peter(email, name, body)
     @name = name
-    @email = name
+    @email = email
     @body = body
     mail(
       :from => @email,

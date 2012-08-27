@@ -1,0 +1,45 @@
+#brief-intro-body {
+  height: 500px;
+}
+
+.brief-pictures {
+  width: 290px;
+  height: 380px;
+  margin-left: auto;
+  margin-right:auto;
+  float:left;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 165px;
+  height: 55px;
+}
+
+.brief-picture-container {
+  margin:20px;
+  width: 250px;
+  height: 280px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 3px 3px 20px 4px rgba(0, 0, 0, .7);
+  box-shadow: inset 3px 3px 20px 4px rgba(0, 0, 0, .7);
+  background:url("../assets/peter_frosh.png");
+  background-size:250px 280px;
+  background-repeat:no-repeat;
+}
+
+.brief-intro-text{
+  font-family:"ProximaNovaLtRegular";
+  text-shadow: 1px 2px 30px #000000;
+  filter: dropshadow(color=#000000, offx=1, offy=2);
+  color: black;
+  height: 300px;
+  width: 600px;
+  line-height:150% ;
+  float:left;
+  font-size: 23px;
+  margin-left:20px;
+  margin-right: 20px;
+}

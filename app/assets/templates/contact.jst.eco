@@ -1,26 +1,40 @@
-<form class="form-horizontal">
-  <fieldset>
-    <legend>Email Peter!</legend>
-    <div class="control-group">
-      <label class="control-label" for="name">Name</label>
-      <div class="controls">
-        <input type="text" class="input-xlarge" id="name">
+<div class="page-within">
+  <p class="contact-heading">
+    Inquiries? Questions? Or just want to get in touch? <br /> Send me an email!
+  </p>
+  <br/>
+  <div class="email-area">
+    <div class="row" style="margin-left:auto;margin-right:auto;">
+      <div class="span3">&nbsp;</div>
+      <div class="span3">
+        <div class="control-group" id="name-space">
+          <label>Name</label>
+          <input type="text" placeholder="Bob Bobson" id="sender-name">
+          <span class="help-block"></span>
+        </div>
       </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="email">Email</label>
-      <div class="controls">
-        <input type="text" class="input-xlarge" id="email">
-      </div>
-    </div>
-    <div class="control-group">
-      <label class="control-label" for="email-body">* Email Body</label>
-        <div class="controls">
-          <textarea id="email-body" type="textarea" rows="10" cols="1000"></textarea>
-          <p class="help-block"></p>
+      <div class="span3">
+        <div class="control-group" id="email-space">
+          <label>Email</label>
+          <input type="text" placeholder="bob.bobson@email.com" id="sender-email">
+          <span class="help-block"></span>
         </div>
       </div>
     </div>
-    <button type="submit" class="btn" id="send-email">Send Email!</button>
-  </fieldset>
-</form>
+    <div class="row">
+      <div class="control-group" id="body-space">
+        <label>Body</label>
+        <textarea id="sender-body"/>
+        <span class="help-block"></span>
+      </div>
+    </div>
+  </div>
+  <div class="submit-button-container">
+    <div class="submit-button btn btn-primary btn-large">
+      Send email
+    </div>
+  </div>
+  <div class="control-group" id="response-control">
+    <label class="contact-heading response"></label>
+  </div>
+</div>

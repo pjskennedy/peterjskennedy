@@ -1,0 +1,8 @@
+
+t = 0
+while(1)
+  x = gets
+  break if x == 'q'
+  t += 1
+end
+p t
