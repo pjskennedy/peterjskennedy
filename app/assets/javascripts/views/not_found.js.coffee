@@ -1,6 +1,6 @@
 class Personal.Views.Notfound extends Backbone.View
 
-  template: JST['404']
+  template: JST['not_found']
 
   render: () ->
     $(@el).html(@template())
