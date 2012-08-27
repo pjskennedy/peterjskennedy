@@ -20,15 +20,9 @@
   filter: dropshadow(color=#000000, offx=0, offy=10);
 }
 
-body {
-  background: url("black_twill.png");
-  background-repeat: true;
-}
-
 #main-body {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .navigation {
