@@ -1,4 +1,7 @@
 <div id="brief-intro-body" class="page-within">
+  <p style="text-align:center; margin-bottom:80px">
+    My site's getting a new look! Don't let this ugly layout frighten you! It won't be here for long!
+  </p>
   <div class="brief-pictures">
     <div class="brief-picture-container"></div>
     <div class="icons">
@@ -23,5 +26,4 @@
       Current aspirations?   <em>Anything</em>
     </p>
   </div>
-
 </div>
