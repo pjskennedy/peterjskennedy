@@ -17,6 +17,204 @@ p {
   color: black;
   line-height:150% ;
   font-size: 23px;
-  margin-left:20px;
-  margin-right: 20px;
+}
+
+
+.engineering-skills {
+  font-family: "ProximaNovaLtRegular";
+  text-align: center;
+  text-shadow: 1px 2px 30px #000000;
+  filter: dropshadow(color=#000000, offx=1, offy=2);
+  color: black;
+  line-height:120%;
+  font-size: 18px;
+  .engineering-skills-heading {
+    font-family: "ProximaNovaBLRegular";
+    margin-bottom:20px;
+    font-size: 30px;
+  }
+  .engineering-skills-university {
+    font-family: "ProximaNovaLtItalic";
+    margin-bottom:20px;
+    font-size: 25px;
+
+  }
+  .engineering-skills-skills {
+
+  }
+}
+
+#venio-main {
+
+  height: 250px;
+  width: 100%;
+
+  #venio-image {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/venio.png');
+    -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, .6);
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, .6);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background-color:white;
+    background-position: 5px 15px;
+    background-size: 200px 170px;  
+    background-repeat: no-repeat;
+    float: left;
+  }
+
+  #venio-text {
+    width: 75%;
+    height: 200px;
+    padding-left: 30px;
+    padding-right: 15px;
+    float:left;
+  }
+}
+.button-container {
+  width: 100%;
+  text-align: center;
+  .button {
+    width: 200px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+  }
+}
+
+.read-more-venio-body {
+}
+
+.hidden {
+  display:none;
+}
+
+.murphee-heading {
+  text-align:center;
+  font-size: 20px;
+  font-family: "ProximaNovaLtRegular";
+  text-shadow: 1px 2px 30px #000000;
+  filter: dropshadow(color=#000000, offx=1, offy=2);
+  color: black;
+  line-height:120%;
+  .murphee-title {
+    font-family: "ProximaNovaBlRegular";
+    margin-top:15px;
+    margin-bottom:10px;
+    font-size: 30px;
+  }
+  .murphee-spelt {
+  }
+}
+
+.text-selected {
+  font-family: "ProximaNovaBlRegular";
+}
+
+.group-photo { 
+  width: 330px;
+  height: 250px;
+  background-image: url('../assets/group.png');
+  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color:white;
+  background-position: 0px, 0px;
+  background-size: 330px 250px;  
+  background-repeat: no-repeat;
+}
+
+.photo-container {
+  width: 335px;
+  float:left;
+}
+
+
+.read-more-murphee-body {
+  height: 1130px;
+}
+
+.read-more-murphee-body-text {
+  margin-left: 30px;
+  float:left;
+  width: 60%;
+}
+
+#murphee-main {
+
+  width: 100%;
+  margin-top:20px;
+  height: 380px;
+
+  #murphee-image {
+    margin-top: 40px;
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/murphee.png');
+    -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background-color:white;
+    background-position: 0px, 0px;
+    background-size: 300px 300px;  
+    background-repeat: no-repeat;
+    float: right;
+  }
+  #murphee-text {
+    width: 60%;
+    height: 300px;
+    padding: 30px;
+    float:left;
+  }
+}
+
+
+.circuit-image {
+  width: 100%;
+  height: 240px;
+  margin-top:20px;
+  background-image: url('../assets/circuits.png');
+  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color:white;
+  background-position: 0px, 0px;
+  background-size: 355px 355px;  
+  background-repeat: no-repeat;
+}
+.code-image {
+
+  width: 100%%;
+  height: 240px;
+  margin-top: 20px;
+  margin-bottom :20px;
+  background-image: url('../assets/code.png');
+  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color:white;
+  background-position: -20px, 0px;
+  background-size: 450px 300px;  
+  background-repeat: no-repeat;
+}
+
+.circuit-diagram-image {
+  width: 100%;
+  height: 240px;
+  margin-top:20px;
+  background-image: url('../assets/circuit-diagram.png');
+  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color:white;
+  background-position: 0px, 0px;
+  background-size: 900px 300px;  
+  background-repeat: no-repeat;
+  float: left;
 }

@@ -6,6 +6,7 @@
 //= require jquery
 //= require jquery-ui
 //= require twitter/bootstrap
+//= require masonry
 //= require_self
 //= require underscore
 //= require backbone

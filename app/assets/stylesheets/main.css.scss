@@ -22,7 +22,9 @@
 
 #main-body {
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .navigation {
@@ -78,6 +80,13 @@
   background-repeat:repeat-x;
 }
 
-
-
+.link {
+  font-family: "ProximaNovaLtRegular";
+  width: 80px;
+  text-align: center;
+  font-size: 16px;
+  float: left;
+  background:none;
+  color:white;
+}
 
