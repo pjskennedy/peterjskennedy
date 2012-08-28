@@ -59,7 +59,7 @@ class Personal.Views.Contact extends Backbone.View
     @email.save( {address: @email.attributes.address, name: @email.attributes.name, body: @email.attributes.body},{ success: @emailSent , error: @emailFailed }) if @checkFields()
 
   emailSent: () =>
-    _gaq.push(['_trackEvent', 'Email', 'Sent' @email.attributes.email])
+    _gaq.push(['_trackEvent', 'Email', 'Sent', @email.attributes.email])
     $('#sender-name').val('')
     $('#sender-body').val('')
     $('#sender-email').val('')
@@ -69,7 +69,7 @@ class Personal.Views.Contact extends Backbone.View
     @initialize()
 
   emailFailed: () =>
-    _gaq.push(['_trackEvent', 'Email', 'Failed' @email.attributes.email])
+    _gaq.push(['_trackEvent', 'Email', 'Failed', @email.attributes.email])
     $('#response-control').removeClass('success')
     $('#response-control').addClass('error')
     $('#response-control').children('.response').html("Email was not sent!")
