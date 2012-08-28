@@ -42,14 +42,18 @@ class Personal.Views.Main extends Backbone.View
   renderNewPage: (event) =>
     page = $(event.currentTarget).data('page')
     if page == "about" and @current_page != "about"
+      _gaq.push(['_trackEvent', 'About', 'navigated'])
       @renderAbout()
     if page == "engineering" and @current_page != "engineering"
+      _gaq.push(['_trackEvent', 'Engineering', 'navigated'])
       @renderEngineering()
     if page == "contact" and @current_page != "contact"
+      _gaq.push(['_trackEvent', 'Contact', 'navigated'])
       @renderContact()
 
   render404: () ->
     @current_page = "404"
+    _gaq.push(['_trackEvent', 'Errors', 'navigated'])
     @$(".nav-text").removeClass('nav-text-selected')
     page_404 = new Personal.Views.Notfound()
     $("#main-body").html(page_404.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
