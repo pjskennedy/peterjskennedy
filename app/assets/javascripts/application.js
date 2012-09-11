@@ -10,6 +10,7 @@
 //= require_self
 //= require underscore
 //= require backbone
+//= require moment
 //= require personal
 //= require_tree ../templates
 //= require_tree ./models

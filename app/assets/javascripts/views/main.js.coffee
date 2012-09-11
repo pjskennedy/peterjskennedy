@@ -7,10 +7,13 @@ class Personal.Views.Main extends Backbone.View
 
 
   render: () ->
+      
     $(@el).html(@template())
     this
 
   renderPage: (view) ->
+    user = 'peterjskennedy'
+    count = 0
     @$("#main-body").hide('slide', {direction: 'up', easing: 'swing', duration: 300}, () ->
       $("#main-body").html(view.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
     )

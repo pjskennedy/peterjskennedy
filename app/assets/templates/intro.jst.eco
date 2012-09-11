@@ -5,7 +5,7 @@
   <div class="brief-pictures">
     <div class="brief-picture-container"></div>
     <div class="icons">
-      <a href="http://twitter.com/peterjskennedy" target="_blank"><img width="55" height="55" src="assets/link-icons/twitter-small.png" /></a> 
+      <a id="twitter-link" href="http://twitter.com/peterjskennedy" target="_blank"><img width="55" height="55" src="assets/link-icons/twitter-small.png" /></a> 
       <a href="http://www.linkedin.com/pub/peter-kennedy/46/880/943" target="_blank"><img width="50" height="50" src="assets/link-icons/linked-in-small.png" /></a> 
       <a href="https://github.com/pjskennedy" target="_blank"><img width="50" height="50" src="assets/link-icons/git-hub-small.png" /></a> 
     </div>
@@ -26,4 +26,5 @@
       Current aspirations?   <em>Anything</em>
     </p>
   </div>
+  <div id="twitter-container"></div>
 </div>
