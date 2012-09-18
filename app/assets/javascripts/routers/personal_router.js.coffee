@@ -20,12 +20,13 @@ class Personal.Routers.PersonalRouter extends Backbone.Router
 
   contactPage: =>
     @renderMain()
-    @main_page.renderContact()
+    @main_page.renderContact() 
 
   engineeringPage: =>
     @renderMain()
-    @main_page.renderEngineering()
+    @main_page.renderEngineering() 
 
   render404Page: =>
     @renderMain()
-    @main_page.render404()
+    @main_page.render404() 
+

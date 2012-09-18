@@ -7,7 +7,6 @@ class Personal.Views.Main extends Backbone.View
 
 
   render: () ->
-      
     $(@el).html(@template())
     this
 
@@ -25,6 +24,7 @@ class Personal.Views.Main extends Backbone.View
     intro = new Personal.Views.Intro()
     @renderPage(intro)
     Backbone.history.navigate("/", false)
+
 
   renderEngineering: () ->
     @current_page = "engineering"
