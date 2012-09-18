@@ -54,9 +54,10 @@ class Personal.Views.Contact extends Backbone.View
     @emailFailed() if not valid
     return valid
 
-  sendEmail: (event) =>
+  sendEmail: (event)=>
     @email.attributes = { address: $('#sender-email').val(), body: $('#sender-body').val(), name: $('#sender-name').val()}
-    @email.save( {address: @email.attributes.address, name: @email.attributes.name, body: @email.attributes.body},{ success: @emailSent , error: @emailFailed }) if @checkFields()
+    if @checkFields()
+      @email.save( {address: @email.attributes.address, name: @email.attributes.name, body: @email.attributes.body},{ success: @emailSent , error: @emailFailed })
 
   emailSent: () =>
     _gaq.push(['_trackEvent', 'Email', 'Sent', @email.attributes.email])

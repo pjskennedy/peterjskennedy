@@ -1,25 +1,28 @@
-
-<div id="navigation-container">
-  <div id="title">
-    PeterKennedy
-  </div>
-  <div class="navigation">
-    <div class="nav-heading" data-page="about">
-      <div class="nav-text nav-text-deselected" id="about">
-        about
-      </div>
+<% if ($.browser.msie) : %>
+  <% alert 'YOU ARE USING INTERNET EXPLORER' %>
+<% else : %> 
+  <div id="navigation-container">
+    <div id="title">
+      PeterKennedy
     </div>
-    <div class="nav-heading" data-page="engineering">
-      <div class="nav-text nav-text-deselected" id="engineering">
-        engineering
+    <div class="navigation">
+      <div class="nav-heading" data-page="about">
+        <div class="nav-text nav-text-deselected" id="about">
+          about
+        </div>
       </div>
-    </div>          
-    <div class="nav-heading" data-page="contact">
-      <div class="nav-text nav-text-deselected" id="contact">
-        contact
-      </div>
-    </div>        
+      <div class="nav-heading" data-page="engineering">
+        <div class="nav-text nav-text-deselected" id="engineering">
+          engineering
+        </div>
+      </div>          
+      <div class="nav-heading" data-page="contact">
+        <div class="nav-text nav-text-deselected" id="contact">
+          contact
+        </div>
+      </div>        
+    </div>
   </div>
-</div>
-<div class="main-body-shadow"></div>
-<div id="main-body"></div>
+  <div class="main-body-shadow"></div>
+  <div id="main-body"></div>
+<% end %>
