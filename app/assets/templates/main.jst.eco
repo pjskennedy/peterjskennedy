@@ -1,0 +1,29 @@
+<% if ($.browser.msie) : %>
+  <% alert "Hey!\n\nIt looks like you're using Internet Explorer.\n\nI'm currently making the site work for people in your situation. \n\nThe site, right now, is going to look ... just awful.\n\nEventually the whole site will work in internet explorer, so hang tight! \n\nps, Look into Google Chrome, or Mozilla Firefox\n\npps, This message will eventually be a page, not this annoying popup box. I apologize." %>
+<% end %>
+
+
+<div id="navigation-container">
+  <div id="title">
+    PeterKennedy
+  </div>
+  <div class="navigation">
+    <div class="nav-heading" data-page="about">
+      <div class="nav-text nav-text-deselected" id="about">
+        about
+      </div>
+    </div>
+    <div class="nav-heading" data-page="engineering">
+      <div class="nav-text nav-text-deselected" id="engineering">
+        engineering
+      </div>
+    </div>          
+    <div class="nav-heading" data-page="contact">
+      <div class="nav-text nav-text-deselected" id="contact">
+        contact
+      </div>
+    </div>        
+  </div>
+</div>
+<div class="main-body-shadow"></div>
+<div id="main-body"></div>

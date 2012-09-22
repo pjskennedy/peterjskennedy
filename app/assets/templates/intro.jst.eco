@@ -1,0 +1,30 @@
+<div id="brief-intro-body" class="page-within">
+  <p style="text-align:center; margin-bottom:80px">
+    My site's getting a new look! Don't let this ugly layout frighten you! It won't be here for long!
+  </p>
+  <div class="brief-pictures">
+    <div class="brief-picture-container"></div>
+    <div class="icons">
+      <a id="twitter-link" href="http://twitter.com/peterjskennedy" target="_blank"><img width="55" height="55" src="assets/link-icons/twitter-small.png" /></a> 
+      <a href="http://www.linkedin.com/pub/peter-kennedy/46/880/943" target="_blank"><img width="50" height="50" src="assets/link-icons/linked-in-small.png" /></a> 
+      <a href="https://github.com/pjskennedy" target="_blank"><img width="50" height="50" src="assets/link-icons/git-hub-small.png" /></a> 
+    </div>
+  </div>
+  <div class="brief-intro-text">
+    <p>
+      Hello there!
+      <br /><br />
+      <b>Peter Kennedy</b>
+      <br /> 
+      <em>Engineer extraordinaire</em> 
+      <br /><br />
+      After getting a taste of the blood that is software development, I strive to explore <em>all</em> fields
+      of software engineering (or anything else).
+      <br /> 
+      Current expertise?   Mobile and Web development
+      <br /> 
+      Current aspirations?   <em>Anything</em>
+    </p>
+  </div>
+  <div id="twitter-container"></div>
+</div>
