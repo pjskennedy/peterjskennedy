@@ -55,8 +55,8 @@ Personal::Application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :authentication => :plain,
-    :user_name => 'peter.automailer@gmail.com',
-    :password => 'Simple12'
+    :user_name => APP_CONFIG['username'],
+    :password => APP_CONFIG['password']
   }
 
   # Enable threaded mode
