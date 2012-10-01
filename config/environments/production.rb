@@ -51,13 +51,13 @@ Personal::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
+
   ActionMailer::Base.smtp_settings = {
     :address => "smtp.gmail.com",
     :port => 587,
     :authentication => :plain,
-    :user_name => APP_CONFIG['username'],
-    :password => APP_CONFIG['password']
-
+    :user_name => ENV['username'],
+    :password => ENV['password']
   }
 
   # Enable threaded mode
