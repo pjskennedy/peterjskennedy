@@ -57,6 +57,7 @@ Personal::Application.configure do
     :authentication => :plain,
     :user_name => APP_CONFIG['username'],
     :password => APP_CONFIG['password']
+
   }
 
   # Enable threaded mode

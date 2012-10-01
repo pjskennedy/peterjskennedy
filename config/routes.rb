@@ -37,6 +37,7 @@ Personal::Application.routes.draw do
   get '/engineering' => 'home#index'
   get '/engineering/' => 'home#index'
 
+
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
