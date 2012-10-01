@@ -9,7 +9,7 @@ class Personal.Views.Intro extends Backbone.View
 
   renderTweets: () =>
     user = "peterjskennedy"
-    $.getJSON('http://twitter.com/statuses/user_timeline.json?screen_name=' + user + '&count=40&callback=?', (data) -> (
+    $.getJSON('http://twitter.com/statuses/user_timeline.json?screen_name=' + user + '&count=10&callback=?', (data) -> (
       for tweet in data
         if tweet.text.indexOf("@") == -1
           view = new Personal.Views.Tweet()
