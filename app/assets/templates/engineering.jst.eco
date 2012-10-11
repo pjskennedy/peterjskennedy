@@ -31,22 +31,6 @@
       </p>
     </div>
   </div>
-  <div class="read-more-venio-container button-container">
-    <div class="read-more-venio button btn btn-info btn-large">
-      Read More
-    </div>
-  </div>
-  <br />
-  <div class="read-more-venio-body hidden">
-    <center>
-      <iframe width="640" height="360" src="http://www.youtube.com/embed/fhy--WnRVM8" frameborder="0" allowfullscreen></iframe>
-      <p style="font-size: 16px;"> This is our first product video.</p>
-    </center>
-    <p>
-      What did I do at Venio? Short answer: A bit of everything. Long answer: I worked mostly in back-end development making the web application <a hred="http://ven.io" target="_blank">www.ven.io</a>. Ie, the code you don't see; the numbers running in the background to make sure everything is working. This meant a lot of really interesting code, a lot of database work, and a lot of algorithm design. I also did my fair share of front-end and mobile development.<br /><br/>
-      My time at Venio was the time of my life! Everyday I met more extraordinary people and even more extraordinary challenges. The startup environment is wonderful; everyday has new surprises and lots of fun! The kind of place where a fifteen minute break might involve a ping-pong table or an ice-cream truck, and the kind of people you don't mind hanging out with after work.
-    </p>
-  </div>
   <br/><hr/><br/>
   <div class="murphee-heading">
     I'm not just a software guy. <br />
@@ -62,36 +46,9 @@
     <div id="murphee-text"> 
       <p class="text-selected">AER201</p><br />
       <p>
-        If there is one course at UofT that will cause a loss of sleep, It's AER201. A second year course for Engineering Science students where basically, on the first day the professor will enter the lecture hall and say "hello everyone, you need to build an autonomous machine that does THIS". Our Project? Measuring the depth of heavy-water in containers located in hazardous areas of nuclear power plants.
+        Murphee is an autonomous machine to measure the the depths of heavy water containers in dangerous areas of a nuclear power plant.<br /><br /> This, of course, is a proof of concept design. The machine is entirely autonomous using a PIC16 microcontroller with it's own onboard power supply and circuitry designed by my team. 
       </p>     
     </div>
     <div id="murphee-image"></div>
   </div>
-  <div class="read-more-murphee-container button-container">
-    <div class="read-more-murphee button btn btn-info btn-large">
-      Read More
-    </div>
-  </div>
-  <br />
-  <div class="read-more-murphee-body hidden">
-    <p style="text-align:center;">
-      This is with two other teammates, Ricardo Santos-Baptista and Peter Lin. <br /> <br />
-    </p>
-    <div class="photo-container">
-      <div class="group-photo"></div>
-      <div class="code-image"></div>
-      <div class="circuit-image"></div>
-    </div>
-    <div class="read-more-murphee-body-text">
-      <p>
-        Now, When I say build an autonomous machine. I mean <em>literally</em> an autonomous machine. It's a strange feeling working for months building something incredibly complex where the only control you have over it, is a push of a button. <br /> <br />
-        Now it isn't just building a machine. More importantly, it involves <em>designing</em> a machine. <br /> 
-        This means designing and building all circuits. Designing and building all mechanical components, Designing and writing all code. And the hardest part, integration. <br /><br />
-        Upcoming AER201 Student? <br /><br />
-        Organization is key. Communication is key. All the things that seem like they are the key to success in this course (coding, circuit building etc), are not. Anyone can build a circuit. Learn to work as an organized team. <br /><br />And most importantly, <br/><br /> Don't panic and be professional.
-      </p>
-    </div>
-    <div class="circuit-diagram-image"></div>
-  </div>
-
 </div

@@ -5,6 +5,11 @@ class Personal.Views.Main extends Backbone.View
 
   template: JST['main']
 
+  initialize: =>
+    @intro       = new Personal.Views.Intro()
+    @engineering = new Personal.Views.Engineering()
+    @contact     = new Personal.Views.Contact()
+    @page_404    = new Personal.Views.Notfound()
 
   render: () ->
     $(@el).html(@template())
@@ -21,8 +26,7 @@ class Personal.Views.Main extends Backbone.View
     @current_page = "about"
     @$(".nav-text").removeClass('nav-text-selected')
     $("#about").addClass('nav-text-selected')
-    intro = new Personal.Views.Intro()
-    @renderPage(intro)
+    @renderPage(@intro)
     Backbone.history.navigate("/", false)
 
 
@@ -30,16 +34,14 @@ class Personal.Views.Main extends Backbone.View
     @current_page = "engineering"
     @$(".nav-text").removeClass('nav-text-selected')
     $("#engineering").addClass('nav-text-selected')
-    engineering = new Personal.Views.Engineering()
-    @renderPage(engineering)
+    @renderPage(@engineering)
     Backbone.history.navigate("/engineering", false)
 
   renderContact: () ->
     @current_page = "contact"
     @$(".nav-text").removeClass('nav-text-selected')
     $("#contact").addClass('nav-text-selected')
-    contact = new Personal.Views.Contact()
-    @renderPage(contact)
+    @renderPage(@contact)
     Backbone.history.navigate("/contact", false)
 
   renderNewPage: (event) =>
@@ -58,7 +60,6 @@ class Personal.Views.Main extends Backbone.View
     @current_page = "404"
     _gaq.push(['_trackEvent', 'Errors', 'navigated'])
     @$(".nav-text").removeClass('nav-text-selected')
-    page_404 = new Personal.Views.Notfound()
-    $("#main-body").html(page_404.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
+    $("#main-body").html(@page_404.render().el).show('slide', {direction: 'up', easing: 'swing'}, 300)
     Backbone.history.navigate("/not_found", false)
 
