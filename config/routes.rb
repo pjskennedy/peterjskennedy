@@ -32,10 +32,10 @@ Personal::Application.routes.draw do
   #     end
   #   end
 
-  get '/contact' => 'home#index'
-  get '/contact/' => 'home#index'
-  get '/engineering' => 'home#index'
-  get '/engineering/' => 'home#index'
+  # get '/contact' => 'home#index'
+  # get '/contact/' => 'home#index'
+  # get '/engineering' => 'home#index'
+  # get '/engineering/' => 'home#index'
 
 
   # Sample resource route with sub-resources:
@@ -69,6 +69,7 @@ Personal::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   match "*a", to: 'home#index'
+
 
 
 end

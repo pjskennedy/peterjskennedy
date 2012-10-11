@@ -7,8 +7,7 @@ class Personal.Routers.PersonalRouter extends Backbone.Router
     'engineering'  : 'engineeringPage'
     'engineering/' : 'engineeringPage'
     '*undefined' : 'render404Page'
-    'not_found' : 'render404Page'
-
+    'not_found'  : 'render404Page'
     'not_found/' : 'render404Page'
 
   initialize: =>
