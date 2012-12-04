@@ -25,7 +25,6 @@ end
 
 gem 'jquery-rails'
 gem 'backbone-on-rails'
-gem 'jquery-rails'
 gem 'pry'
 
 # To use ActiveModel has_secure_password
