@@ -33,7 +33,7 @@ class Personal.Views.Contact extends Backbone.View
     else
       $("#name-space").removeClass("error")
       $("#name-space").children(".help-block").html("")
-      valid = true if valid != false
+      valid = true if not valid
     if not @validateEmail(@email.attributes.address)
       $("#email-space").addClass("error")
       $("#email-space").children(".help-block").html("Please enter a valid email!")
@@ -41,7 +41,7 @@ class Personal.Views.Contact extends Backbone.View
     else
       $("#email-space").removeClass("error")
       $("#email-space").children(".help-block").html("")
-      valid = true if valid != false
+      valid = true if not valid
     if @email.attributes.body.length == 0
       $("#body-space").addClass("error")
       $("#body-space").children(".help-block").html("Please enter a message!")
@@ -50,7 +50,7 @@ class Personal.Views.Contact extends Backbone.View
       $("#body-space").removeClass("error")
       $("#body-space").children(".help-block").html("")
       @email.attributes.body = @email.attributes.body.replace(///\n///g, '<br />')
-      valid = true if valid != false
+      valid = true if not valid
     @emailFailed() if not valid
     return valid
 

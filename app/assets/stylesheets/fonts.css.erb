@@ -1,8 +1,11 @@
 @font-face {
     font-family: 'Comfortaa-Light';
-    src: url(<%= asset_path 'Comfortaa-Light.ttf' %>);
+    src: url(<%= asset_path 'Comfortaa-Light.eot' %>);
+    src: url(<%= asset_path 'Comfortaa-Light.eot?#iefix' %>) format('embedded-opentype'),
+         url(<%= asset_path 'Comfortaa-Light.woff' %>) format('woff'),
+         url(<%= asset_path 'Comfortaa-Light.ttf' %>) format('truetype');
     font-weight: normal;
-    font-style:normal;
+    font-style: normal;
 }
 
 @font-face {

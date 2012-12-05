@@ -44,7 +44,7 @@
     <div id="murphee-text"> 
       <p class="text-selected">AER201</p><br />
       <p>
-        Murphee is an autonomous machine to measure the depths of heavy water containers in dangerous areas of a nuclear power plant.<br /><br /> This, of course, is a proof of concept design. The machine is entirely autonomous, using a PIC16 microcontroller with it's own onboard power supply and circuitry designed by my team and I. 
+        Murphee is an autonomous machine to measure the depths of heavy water containers in dangerous areas of a nuclear power plant.<br /><br /> This, of course, is a proof of concept design. The machine is entirely autonomous, using a PIC16 microcontroller with it's own onboard power supply and circuitry designed by my team. 
       </p>     
     </div>
     <div id="murphee-image"></div>
