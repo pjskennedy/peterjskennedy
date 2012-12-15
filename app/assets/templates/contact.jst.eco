@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="submit-button-container">
-    <div class="submit-button btn btn-primary btn-large">
+    <div class="submit-button btn btn-primary btn-large" id="send-email-button">
       Send email
     </div>
   </div>

@@ -6,6 +6,7 @@ class Personal.Views.Contact extends Backbone.View
   template:    JST['contact']
 
   initialize: () ->
+    $('#send-email-button').attr('disabled', false)
     @email = new Personal.Models.Email()
 
   render: () ->
@@ -33,7 +34,6 @@ class Personal.Views.Contact extends Backbone.View
     else
       $("#name-space").removeClass("error")
       $("#name-space").children(".help-block").html("")
-      valid = true if not valid
     if not @validateEmail(@email.attributes.address)
       $("#email-space").addClass("error")
       $("#email-space").children(".help-block").html("Please enter a valid email!")
@@ -41,7 +41,6 @@ class Personal.Views.Contact extends Backbone.View
     else
       $("#email-space").removeClass("error")
       $("#email-space").children(".help-block").html("")
-      valid = true if not valid
     if @email.attributes.body.length == 0
       $("#body-space").addClass("error")
       $("#body-space").children(".help-block").html("Please enter a message!")
@@ -50,14 +49,16 @@ class Personal.Views.Contact extends Backbone.View
       $("#body-space").removeClass("error")
       $("#body-space").children(".help-block").html("")
       @email.attributes.body = @email.attributes.body.replace(///\n///g, '<br />')
-      valid = true if not valid
+
     @emailFailed() if not valid
     return valid
 
   sendEmail: (event)=>
+    $('#send-email-button').attr('disabled', true)
     @email.attributes = { address: $('#sender-email').val(), body: $('#sender-body').val(), name: $('#sender-name').val()}
     if @checkFields()
       @email.save( {address: @email.attributes.address, name: @email.attributes.name, body: @email.attributes.body},{ success: @emailSent , error: @emailFailed })
+
 
   emailSent: () =>
     _gaq.push(['_trackEvent', 'Email', 'Sent', @email.attributes.email])
