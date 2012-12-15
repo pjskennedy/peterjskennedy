@@ -21,9 +21,10 @@
     Recently, I've been with Venio. 
   </p>
   <br />
-  <div id="venio-main">
-    <a href="http://ven.io" target="_blank" id="venio-image"></a>
-    <div id="venio-text">      
+
+  <div class="info-main">
+    <a href="http://ven.io" target="_blank" class="image" id="venio-image"></a>
+    <div id="info-text">      
       <p>
         <em>What's Venio?</em> We take the mystery out of mystery meat.<br />
         We offer personalized interactive meal plans based around your nutritional goals by supplying not only delicious recipes, but information on exactly what you're eating. <br /><br />
@@ -31,4 +32,21 @@
       </p>
     </div>
   </div>
+
+  <br /><hr />
+  <p style="text-align: center;">
+    Some apps I've been working on lately:
+  </p>
+  <br />
+  <div class="info-main">
+    <a href="http://www.currentsessions.com" target="_blank" class="image" id="current-sessions-image"></a>
+    <div id="info-text">      
+      <p><br/>
+        Current Sessions is a non-for-profit production initiative focusing on water-preservation and good music.
+        <br /><br />
+        <em>Coming soon</em>
+      </p>
+    </div>
+  </div>
+  <p><em>There may or may not be some undisclosed apps coming down the pipe, nudge nudge wink wink</em></p>
 </div>
