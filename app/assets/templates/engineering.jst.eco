@@ -31,22 +31,4 @@
       </p>
     </div>
   </div>
-  <br/><hr/><br/>
-  <div class="murphee-heading">
-    <div class="murphee-title">
-      M.U.R.P.H.E.E.
-    </div>
-    <div class="murphee-spelt">
-      (<b>M</b>easuring <b>U</b>tility <b>R</b>obot for <b>P</b>recise <b>H</b>eights in <b>E</b>xtreme <b>E</b>nvironments)
-    </div>
-  </div>
-  <div id="murphee-main">
-    <div id="murphee-text"> 
-      <p class="text-selected">AER201</p><br />
-      <p>
-        Murphee is an autonomous machine to measure the depths of heavy water containers in dangerous areas of a nuclear power plant.<br /><br /> This, of course, is a proof of concept design. The machine is entirely autonomous, using a PIC16 microcontroller with it's own onboard power supply and circuitry designed by my team. 
-      </p>     
-    </div>
-    <div id="murphee-image"></div>
-  </div>
-</div
+</div>
