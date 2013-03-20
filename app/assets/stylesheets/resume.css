@@ -1,0 +1,127 @@
+
+
+
+.contact-dt {
+  font-weight: normal;
+  height:24px; 
+}
+
+.resume-background {
+  width: 100%;
+  position: absolute;
+  background-color: black;
+}
+
+.main-resume {
+  /* to centre page on screen*/
+  width: 800px;
+  color:black;
+  margin-left:auto;
+  margin-right: auto;
+  background-color:white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.section-subtitle{
+  font-family: "helveticaneue";
+  font-style: bold;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.header {
+  border-bottom: solid thick rgb(100, 120, 135);
+  padding:30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color:rgb(215,230,240);
+}
+
+.main-body {
+  padding: 30px;
+  
+  /*background-color:rgb(230,250,245);*/
+}
+
+.text-body {
+  
+  padding-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: "helveticaneue";
+  font-size: 16;
+  border-left: solid medium rgb(100, 120, 135);
+  border-top:none;
+  border-right:none;
+  border-bottom:none;
+  text-align: justify;
+
+}
+
+.contact-item {
+  font-family: "helveticaneue";
+  font-size: 14px;
+  height: 18px;
+  margin: 0px;
+  padding: 0px;
+  text-align:right;
+
+}
+
+.contact-item-container {
+  padding:0px;
+  margin:0px;
+  height:18px;
+
+}
+
+.section-title {
+  font-size: 18px;
+  font-family: "helveticaneue";
+  border-top: white 1px;
+  border-bottom: white 1px;
+}
+
+.contact {
+
+  float:left;
+  text-align:right;
+}
+
+.name {
+  font-family:"helveticaneuelight";
+  float:left;
+  font-style:bold;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 50px;
+
+}
+
+.contact-info {
+  color: rgb(12,41,22);
+}
+
+.icn {
+  height: 15px;
+  width: 15px;
+}
+
+.left-icon {
+  height: 4px;
+  width: 30px;
+  margin-left: -25px;
+  margin-top: 8px;
+  margin-right: 10px;
+  background-color: rgb(100, 120, 135);
+  float: left;
+}
+
+.main-section {
+  font-size: 20px;
+}

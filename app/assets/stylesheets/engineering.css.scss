@@ -104,69 +104,7 @@ p {
   font-family: "ProximaNovaBlRegular";
 }
 
-.group-photo { 
-  width: 330px;
-  height: 250px;
-  background-image: url('../assets/group.png');
-  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  background-color:white;
-  background-position: 0px, 0px;
-  background-size: 330px 250px;  
-  background-repeat: no-repeat;
-}
-
 .photo-container {
   width: 335px;
   float:left;
-}
-
-
-.circuit-image {
-  width: 100%;
-  height: 240px;
-  margin-top:20px;
-  background-image: url('../assets/circuits.png');
-  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  background-color:white;
-  background-position: 0px, 0px;
-  background-size: 355px 355px;  
-  background-repeat: no-repeat;
-}
-.code-image {
-
-  width: 100%%;
-  height: 240px;
-  margin-top: 20px;
-  margin-bottom :20px;
-  background-image: url('../assets/code.png');
-  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  background-color:white;
-  background-position: -20px, 0px;
-  background-size: 450px 300px;  
-  background-repeat: no-repeat;
-}
-
-.circuit-diagram-image {
-  width: 100%;
-  height: 240px;
-  margin-top:20px;
-  background-image: url('../assets/circuit-diagram.png');
-  -webkit-box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, .6);
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  background-color:white;
-  background-position: 0px, 0px;
-  background-size: 900px 300px;  
-  background-repeat: no-repeat;
-  float: left;
 }

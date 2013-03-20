@@ -6,12 +6,18 @@ class Personal.Routers.PersonalRouter extends Backbone.Router
     'contact/'     : 'contactPage'
     'engineering'  : 'engineeringPage'
     'engineering/' : 'engineeringPage'
+    'resume' : 'resumePage'
+    'resume/': 'resumePage'
     '*undefined' : 'render404Page'
+
     'not_found'  : 'render404Page'
     'not_found/' : 'render404Page'
 
   initialize: =>
     @main_page = new Personal.Views.Main()
+
+  resumePage: =>
+    null
 
   renderMain: =>
     $("#container").html(@main_page.render().el)
