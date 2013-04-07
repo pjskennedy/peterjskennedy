@@ -13,7 +13,7 @@
       <div class="span6">
         <div class="alert">
           <button type="button" class="close" data-dismiss="alert">&times;</button>
-          <strong>Warning!</strong> This will crash your browser for large... LARGE strings. Also, the array will display out of screen if the string is too large, or if the ed-values ever require 3 or more digits. Use at your own risk.
+          <strong>Warning!</strong> I'm sure this will crash your browser for large... LARGE strings. Also, the array will display out of screen if the string is too large, or if the ED-values ever require 3 or more digits. Use at your own risk. Those bugs above will be handled in the future.
         </div>
       </div>
     </div>
