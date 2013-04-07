@@ -3,7 +3,7 @@
 <br/>
 
 <h1 style="text-align:center;"> Edit Distance Table </h1>
-
+<br/>
 <div id="table-container">
   <table>
     <tbody id="ed-table">
@@ -61,7 +61,7 @@
 <br/>
 
 <h1 style="text-align:center;"> New Strings </h1>
-
+<br/>
 <table>
   <tbody id="updated-table">
     <tr id="updated-1" class="updated-text lead">
@@ -80,4 +80,5 @@
 <br/>
 
 <h1 style="text-align:center;"> Edit Distance </h1>
+<br/>
 <p class="lead" style="text-align:center;"><%= @model[@model.length-1][@model[0].length-1].val %></p>
