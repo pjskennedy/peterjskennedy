@@ -1,0 +1,48 @@
+<div class="page-within engineering-page">
+  <hr />
+  <div class="engineering-skills">
+    <div class="engineering-skills-heading">
+      Engineering you say?
+    </div>
+    <div class="engineering-skills-university">
+      University of Toronto, Division of Engineering Science, Class of 2014<br/><br/>
+      Electrical and Computer Engineering
+    </div>
+    <div class="engineering-skills-skills">
+      Back-end and Front-end Web Development <br />
+      Mobile Development <br />
+      Digital and Analog Circuit Design<br />
+      Math and Physics Wizardry <br />
+    </div>      
+  </div>
+  <br />
+  <hr />
+  
+  <div id="projects">
+
+    <div class="info-main">
+      <a href="http://ven.io" target="_blank" class="image" id="venio-image"></a>
+     </div>
+
+    <div class="info-main">
+      <a href="http://www.currentsessions.com" target="_blank" class="image" id="current-sessions-image"></a>
+    </div>
+
+    <div class="info-main">
+      <a href="http://www.citoprint.org" target="_blank" class="image" id="citoprint-image"></a>
+    </div>
+
+  </div>
+
+  <p style="text-align:center;"> Other things...</p>
+
+  <div id="engineering-apps">
+    <dl class="dl-horizontal">
+      <a class="app-icon" href="/apps/edit-distance">
+        <dt><i class="icon-tag"></i></dt>
+        <dd><p class="lead"> Edit Distance Calculator</p></dd>
+      </a>
+    </dl>
+  </div>
+
+</div>

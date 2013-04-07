@@ -458,6 +458,7 @@ glyph/glyphicons_417_rss.png: glyph/glyphicons_417_rss-a7f268c8620b49cb09d953e8b
 glyph/glyphicons_418_skype.png: glyph/glyphicons_418_skype-ffdb86283fff26288ada31306a30b833.png
 glyph/glyphicons_419_e-mail.png: glyph/glyphicons_419_e-mail-f6a1363ffbbc67f34dcf42486ea584b0.png
 head-icon.png: head-icon-e1f7dc41347eb9a5f445da2b5a406eee.png
+img/glyphicons-halflings.png: img/glyphicons-halflings-1a44a57f909c3a2cd7d9eb6b58825703.png
 link-icons/f_logo.png: link-icons/f_logo-cf4825b134eac65f573e3f4dab0c3267.png
 link-icons/git-hub-small.png: link-icons/git-hub-small-69bfc5414d061169937d235e10371a50.png
 link-icons/git-hub.png: link-icons/git-hub-460e13372652dc918ef3cce10de4248e.png
@@ -473,8 +474,8 @@ shadow.png: shadow-b550100ed0615ba8e1237dea871239b8.png
 tex2res4.png: tex2res4-a1f251f017283b8c8d79560c55d60743.png
 tweet-icon.png: tweet-icon-49981880a5b81800e3932f4b527a3cc8.png
 venio.png: venio-414a2c3fa698b648b272a62e008a647e.png
-application.js: application-5aff3089bfa36bb0c3a06d566b475c8d.js
-application.css: application-fa3d44f0f633233f1a3f8a59168fb187.css
+application.js: application-4a80f4049907aafd5b3b2826d7aef9e2.js
+application.css: application-bdc964ae07f933e8335037fd27eb15df.css
 fontawesome-webfont.eot: fontawesome-webfont-7cf1b0de49e2f8672c9ad6d9e382115f.eot
 fontawesome-webfont.svg: fontawesome-webfont-4d19fdd70a080778557b652cb4868557.svg
 fontawesome-webfont.ttf: fontawesome-webfont-1e29be0bb354c9f664cbca7df9a966d8.ttf
