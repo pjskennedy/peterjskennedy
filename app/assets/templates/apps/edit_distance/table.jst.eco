@@ -62,16 +62,20 @@
 
 <h1 style="text-align:center;"> New Strings </h1>
 <br/>
+
+<!--  The new data must be displayed in a table
+      because the font is variable width -->
+
 <table>
   <tbody id="updated-table">
     <tr id="updated-1" class="updated-text lead">
       <% for item in @new_str1 : %>
-        <td><%= item %>
+        <td><%= item %> </td>
       <% end %>
     </tr>
     <tr id="updated-2" class="updated-text lead">
       <% for item in @new_str2 : %>
-        <td><%= item %>
+        <td><%= item %> </td>
       <% end %>
     </tr>
   </tbody>
