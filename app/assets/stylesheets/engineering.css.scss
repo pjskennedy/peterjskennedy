@@ -1,3 +1,14 @@
+#engineering-apps {
+  margin-left: 50px;
+}
+
+.app-icon {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
 .engineering-heading {
   width: 100%;
   text-align: center;
@@ -39,19 +50,27 @@ p {
     font-size: 25px;
 
   }
-  .engineering-skills-skills {
+}
 
-  }
+
+#projects {
+  height: 300px;
+  width: 665px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info-main {
-
-  height: 250px;
-  width: 100%;
+  
+  float: left;
+  height: 220px;
+  width:  220px;
 
   .image {
     width: 200px;
     height: 200px;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, .6);
     box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, .6);
     -webkit-border-radius: 30px;
@@ -72,6 +91,12 @@ p {
     background-image: url('../assets/current-sessions-productions-logo.png');
     background-size: 170px 120px;
     background-position: 15px 35px;
+  }
+
+  #citoprint-image {
+    background-image: url('../assets/citoprint.png');
+    background-size: 225px 225px;
+    background-position: -13px -13px;
   }
 
   #info-text {

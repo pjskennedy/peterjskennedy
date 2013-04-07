@@ -4,5 +4,10 @@ class Personal.Views.Engineering extends Backbone.View
 
   render: () ->
     $(@el).hide().html(@template()).show("slide", { direction: "down" }, 200)
+
+
+
+
+
     this
 

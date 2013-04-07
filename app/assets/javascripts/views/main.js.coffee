@@ -37,6 +37,8 @@ class Personal.Views.Main extends Backbone.View
     @renderPage(@engineering)
     Backbone.history.navigate("/engineering", false)
 
+
+
   renderContact: () ->
     @current_page = "contact"
     @$(".nav-text").removeClass('nav-text-selected')
