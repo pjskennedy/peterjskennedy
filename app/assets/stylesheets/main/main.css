@@ -9,6 +9,12 @@ p {
   -webkit-animation: fadein 0.3s; /* Safari and Chrome */
   -o-animation: fadein 0.3s; /* Opera */
 }
+
+.main-container {
+  margin-top: 10%;
+  text-align: center;
+}
+
 .title {
   font-size: 150px;
   font-family: "Ubuntu";
@@ -20,19 +26,17 @@ p {
   font-size: 30px;
 }
 
-.main-container {
-  margin-top: 10%;
-  text-align: center;
-
-}
-i {
+.icon-coffee:hover {
   color: rgba(30,30,30,0.9);
-  
+
 }
 
-i:hover  {
-  text-decoration:none;
+a.contact-link:hover {
   color: rgba(100,30,100,0.9);
+}
+a.contact-link {
+  color: rgba(30,30,30,0.9);
+  text-decoration: none;
 }
 
 @keyframes fadein {
