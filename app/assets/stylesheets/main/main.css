@@ -23,13 +23,17 @@ p {
 }
 
 a.contact-link:hover {
+  color: #1e1e1e; // Old browsers
   color: rgba(100,100,100,0.9);
 }
 a.contact-link {
   font-size: 30px;
+  border:0;
+  color: #1e1e1e; // Old browsers
   color: rgba(30,30,30,0.9);
   text-decoration: none;
 }
+
 
 @media only screen and (max-device-width: 480px) {
   .title {
