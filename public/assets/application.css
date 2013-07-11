@@ -441,7 +441,7 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
     font-weight: normal;
     font-style: normal;
 }
-html {
+html, body {
   height: 100%;
 }
 
@@ -453,8 +453,10 @@ p {
 }
 
 .main-container {
-  margin-top: 10%;
+  padding-top: 10%;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .title {

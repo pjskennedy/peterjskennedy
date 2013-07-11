@@ -1,4 +1,4 @@
-html {
+html, body {
   height: 100%;
 }
 
@@ -10,8 +10,10 @@ p {
 }
 
 .main-container {
-  margin-top: 10%;
+  padding-top: 10%;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .title {
