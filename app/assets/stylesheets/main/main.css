@@ -23,7 +23,7 @@ p {
 }
 
 a.contact-link:hover {
-  color: #1e1e1e; // Old browsers
+  color: #464646; // Old browsers
   color: rgba(100,100,100,0.9);
 }
 a.contact-link {

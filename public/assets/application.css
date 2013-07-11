@@ -36,13 +36,6 @@
   font-style: normal;
 }
 
-/*@font-face {
-    font-family: 'Ubuntu';
-    src: url(/assets/Ubuntu-L.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 @font-face {
   font-family: 'Ubuntu';
   src: url(/assets/Ubuntu-L.eot);
@@ -581,7 +574,7 @@ p {
 }
 
 a.contact-link:hover {
-  color: #1e1e1e; // Old browsers
+  color: #464646; // Old browsers
   color: rgba(100,100,100,0.9);
 }
 a.contact-link {
