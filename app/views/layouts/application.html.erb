@@ -1,9 +1,12 @@
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Peter Kennedy</title>
+    <title>Pete (jsk)</title>
     <link rel="shortcut icon" href="/images/head-icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= stylesheet_link_tag    "fonts" %>
     <%= javascript_include_tag "application" %>
@@ -19,7 +22,7 @@
       })();
     </script>
   </head>
-  <body>
+  <body style="background:<%=["#BA95E8","#FFFB5D","#61FFF8","#95FFA9","#77C8E8", "#FF72D2"].sample%>">
 
     <%= yield %>
 
