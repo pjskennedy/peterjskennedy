@@ -11,9 +11,3 @@
  *= require_self
  *= require_tree .
  */
-
-
-body {
-  background: url("black_twill.png");
-  background-repeat: true;
-}
