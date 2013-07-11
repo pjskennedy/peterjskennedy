@@ -14,6 +14,7 @@ class HomeController < ApplicationController
       "#61FFF8",
       "#95FFA9",
       "#77C8E8", 
+      "#FF353F",
       "#FF72D2"].sample
   end
 end

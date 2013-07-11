@@ -441,9 +441,7 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
     font-weight: normal;
     font-style: normal;
 }
-html, body {
-  height: 100%;
-}
+html, body {height: 100%;}
 
 p {
   animation: fadein 0.3s;
@@ -466,26 +464,28 @@ p {
   margin-bottom: 100px;
   color: rgba(30,30,30,0.9);
 }
-.contact-icons {
-  font-size: 30px;
-}
-
-.icon-coffee:hover {
-  color: rgba(30,30,30,0.9);
-
-}
 
 a.contact-link:hover {
   color: rgba(100,100,100,0.9);
 }
 a.contact-link {
+  font-size: 30px;
   color: rgba(30,30,30,0.9);
   text-decoration: none;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .title {
+    font-size: 100px;
+  }
+  a.contact-link {
+    font-size: 50px;
+  }
+}
+
 @keyframes fadein {
   from {
-    margin-left: 30px;
+    margin-left: 45px;
     opacity:0;
   }
   to {
@@ -495,7 +495,7 @@ a.contact-link {
 }
 @-moz-keyframes fadein { /* Firefox */
   from {
-    margin-left: 30px;
+    margin-left: 45px;
     opacity:0;
   }
   to {
@@ -505,7 +505,7 @@ a.contact-link {
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
   from {
-    margin-left: 30px;
+    margin-left: 45px;
     opacity:0;
   }
   to {
@@ -515,7 +515,7 @@ a.contact-link {
 }
 @-o-keyframes fadein { /* Opera */
   from {
-    margin-left: 30px;
+    margin-left: 45px;
     opacity:0;
   }
   to {
