@@ -26,7 +26,8 @@ class HomeController < ApplicationController
       "Builder of things",
       "Brigadier General",
       "Nerf Herder",
-      "Nerf Herder",
+      "Kindergarten Cop",
+      "Jedi Knight",
       "The Very Model of a Modern Major-General",
       "A Lover"].sample
     @icon = [
