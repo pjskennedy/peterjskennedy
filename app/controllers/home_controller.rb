@@ -18,6 +18,14 @@ class HomeController < ApplicationController
       "#95FFA9",
       "#FF353F",
       "#FF72D2"].sample
+    @title = [
+      "Software Engineer",
+      "Intergalactic Space Cowboy",
+      "Space Cadet",
+      "Code Monkey",
+      "Builder of things",
+      "Brigadier General",
+      "A Lover"].sample
     @icon = [
       "coffee",
       "trophy",
