@@ -25,17 +25,25 @@ class HomeController < ApplicationController
       "Code Monkey",
       "Builder of things",
       "Brigadier General",
+      "Nerf Herder",
+      "Nerf Herder",
+      "The Very Model of a Modern Major-General",
       "A Lover"].sample
     @icon = [
       "coffee",
       "trophy",
       "pencil",
+      "ticket",
       "anchor",
       "lightbulb",
       "glass",
       "lemon",
       "folder-open-alt",
       "globe",
+      "umbrella",
+      "cogs",
+      "food",
+      "puzzle-piece",
       "fire-extinguisher"].sample
   end
 end

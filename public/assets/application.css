@@ -566,7 +566,7 @@ p {
 }
 
 .title {
-  font-size: 150px;
+  font-size: 200px;
   font-family: "Ubuntu";
   padding-top: 100px;
   margin-bottom: 100px;
@@ -593,7 +593,7 @@ a.contact-link {
     font-size: 80px;
   }
   a.contact-link {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
