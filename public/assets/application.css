@@ -577,6 +577,7 @@ a.contact-link:hover {
   color: #464646; // Old browsers
   color: rgba(100,100,100,0.9);
 }
+
 a.contact-link {
   font-size: 30px;
   border:0;
