@@ -1,0 +1,17 @@
+<div class="note well well-sm" id="note-<%=@id%>">
+  <% if @type == "success": %>
+    <h4><i class="fa fa-check-circle"></i>&nbsp;<%=@title%></h4>
+  <% else if @type == "warning": %>
+    <h4><i class="fa fa-exclamation-circle"></i>&nbsp;<%=@title%></h4>
+  <% else if @type == "error": %>
+    <h4><i class="fa fa-times-circle"></i>&nbsp;<%=@title%></h4>
+  <% end %>
+  <% if @data instanceof Array: %>
+    <% for item in @data: %>
+      <p><%=item%></p>
+    <% end %>
+  <% else: %>
+    <p><%= @data %></p>
+  <% end %>
+  <small><%= (new Date).toTimeString() %></small>
+</div>

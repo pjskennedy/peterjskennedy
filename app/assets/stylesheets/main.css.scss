@@ -1,0 +1,123 @@
+body {  
+  padding: 0px; 
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif !important; 
+  color: #000 !important;
+  font-weight: 400;
+  background: #111 !important;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.main-container {
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;  
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  border: solid 2px #ccc;
+  background-color: rgba(240, 240, 240, 0.95);
+}
+
+.title-banner {
+  background: url("/assets/sunset.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top:100px;
+  padding-bottom:100px;
+  width: 100%;
+  color: #111 !important;
+  background-color: rgba(240, 240, 240, 0.55);
+  text-align: center;
+}
+
+.contact-icons {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(20, 20, 20, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(20, 20, 20, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(20, 20, 20, 0.75);
+  background-color: #eee;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-family: Lato;
+  color: #eee;
+  font-weight: 100;
+  font-size: 60px;
+  text-align: left;
+}
+
+a.contact-link:hover {
+  color: #464646; 
+  color: rgba(100,100,100,0.9);
+}
+
+.contact-icons {
+  text-align: center;
+}
+
+a.contact-link {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 25px;
+  border:0;
+  color: #111; 
+  text-decoration: none;
+}
+
+.about-link-icon {
+  margin: 3px;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 20px;
+  color: #111;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+.nav-active {
+  text-decoration: none;
+  color: #111;
+  border-bottom: solid 4px #111;
+}
+
+.nav-link:hover  {
+  text-decoration: none;
+  color: #111;
+  border-bottom: solid 4px #111;
+  transition: border-bottom .1s ease-in-out;
+  -moz-transition: border-bottom .1s ease-in-out;
+  -webkit-transition: border-bottom .1s ease-in-out; 
+}
+
+@media only screen and (max-device-width: 480px) {
+  .post-body-text {
+    padding-left: 0px !important;
+  }
+  .title {
+    font-size: 45px;
+    margin-top: 50px;
+  }
+  a.contact-link {
+    font-size: 40px;
+  }
+  .icon-column {
+    font-size: 30px !important;
+  }
+  .post-title {
+    font-size: 30px !important;
+  }
+}

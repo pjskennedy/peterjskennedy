@@ -1,0 +1,25 @@
+
+.profile-image {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(150, 150, 150, 0.75);
+  -moz-box-shadow:    0px 0px 20px 0px rgba(150, 150, 150, 0.75);
+  box-shadow:         0px 0px 20px 0px rgba(150, 150, 150, 0.75);
+}
+
+.social-links {
+  width: 100%;
+  text-align: center;
+}
+
+.social-links a {
+  color: #111 !important;
+  font-size: 22px;
+  width: 100%;
+}
+
+.social-links a:hover {
+  border-bottom: solid 4px #222 !important;
+  color: #222;
+  transition: border-bottom .1s ease-in-out;
+  -moz-transition: border-bottom .1s ease-in-out;
+  -webkit-transition: border-bottom .1s ease-in-out; 
+}

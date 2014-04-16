@@ -1,0 +1,52 @@
+<div class="post-container animated fadeInRight">
+  <div id="map-canvas"></div>
+  <div class="post-list">
+    <% @posts.each do |post| %>
+      <div class="post">
+        <div class="post-header">
+          <div class="icon-column">
+            <i class="fa fa-play"></i>
+          </div>
+          <div class="title-column">
+            <a href="<%=post_path(post)%>" class="post-link">
+              <h1 class="post-title">
+                <b><%=post.title%></b>
+              </h1>
+            </a>
+            <small class="post-location">
+              <a href="http://maps.google.com/?q=<%=post.latitude%>,<%=post.longitude%>" target="_blank">
+                <i class="fa fa-map-marker"></i> &nbsp; 
+                <%= post.coordinates %> on <%= post.posted_at.strftime("%b %-d, %Y") %>
+              </a>
+            </small>
+            <br/>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  var map = new google.maps.Map(document.getElementById("map-canvas"), {});
+
+  var bounds = new google.maps.LatLngBounds();
+
+  <% @posts.each do |post| %>
+    var pos<%=post.id%> = new google.maps.LatLng(<%=post.latitude%>, <%=post.longitude%>)
+    var marker<%=post.id%> = new google.maps.Marker({
+      map: map,
+      draggable: false,
+      title: "<%=post.title%>",
+      position: pos<%=post.id%>
+    });
+    
+    google.maps.event.addListener(marker<%=post.id%>, 'mouseup', function() {
+      window.location = "<%= post_path(post) %>"
+    });
+    
+    bounds.extend(pos<%=post.id%>);
+  <% end %>
+
+  map.fitBounds(bounds);
+</script>

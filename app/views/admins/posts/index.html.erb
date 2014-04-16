@@ -1,0 +1,63 @@
+<div class="post-index">
+
+  <%= link_to "Main Admin Menu", admin_path, :class => "pull-right" %>
+  <br/>
+  <%= link_to "Create New Post", admins_posts_path, :class => "pull-right", :method => :post, data: {confirm: "Are you sure?"} %>
+  <br/>
+  
+
+  <h3> Posts </h3>
+
+  <br/>
+
+
+  <% flash.each do |type, ff| %>
+    <div class="alert alert-<%=type%>"><%=ff%></div>
+  <% end %>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th> Title </th>
+        <th> location </th>
+        <th> status </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td>
+            <h4><%=post.id%></h4>
+          </td>
+          <td>
+            <h4>
+              <% if post.title.nil? or post.title.blank? %>
+                <%= link_to "<i> No Title </i>".html_safe, admins_post_path(post) %>
+              <% else %>
+                <%= link_to "#{post.title}", admins_post_path(post) %>
+              <% end %>
+            </h4>
+          <td>
+            <h4 class="post-location">
+              <a href="http://maps.google.com/?q=<%=post.latitude%>,<%=post.longitude%>" target="_blank">
+                <i class="fa fa-map-marker"></i> &nbsp; 
+                <%=post.coordinates%>
+              </a>
+            </h4>
+          </td>
+          <td>
+            <h4>
+              this post is 
+              <% if post.is_public %>
+                <span class="label label-success">PUBLIC</span>
+              <% else %>
+                <span class="label label-warning">NOT RELEASED</span>
+              <% end %>
+            </h4>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+ 

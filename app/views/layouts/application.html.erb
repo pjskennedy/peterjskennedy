@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pjskennedy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV["GMAP_API_KEY"]}&sensor=false" %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="title-banner">
+  <span class="title">
+    PETER KENNEDY
+    <br/>
+    <i class="fa fa-lightbulb-o"></i>
+    <br/>
+    SOFTWARE ENGINEER
+  </span>
+</div>
+
+<p class="contact-icons">
+
+  <% if current_page?(home_path) %>
+    <%= link_to "home", home_path, :class => "nav-link nav-active" %>
+  <% else %>
+    <%= link_to "home", home_path, :class => "nav-link" %>
+  <% end %>
+
+  <% if current_page?(about_path) %>
+    <%= link_to "about", about_path, :class => "nav-link nav-active" %>
+  <% else %>
+    <%= link_to "about", about_path, :class => "nav-link" %>
+  <% end %>
+  
+  <% if current_page?(posts_path) %>
+    <%= link_to "posts", posts_path, :class => "nav-link nav-active" %>
+  <% else %>
+    <%= link_to "posts", posts_path, :class => "nav-link" %>
+  <% end %>
+
+</p>
+<div class="main-container">
+  <%= yield %>
+</div>
+
+</body>
+</html>

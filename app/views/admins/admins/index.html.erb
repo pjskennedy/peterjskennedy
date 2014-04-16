@@ -1,0 +1,59 @@
+<div class="post-index">
+
+  <%= link_to "Main Admin Menu", admin_path, :class => "pull-right" %>
+  <br/>
+
+  <h3> Admins </h3>
+
+  <br/>
+
+  <% flash.each do |type, ff| %>
+    <div class="alert alert-<%=type%>"><%=ff%></div>
+  <% end %>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th> Email </th>
+        <th> Status </th>
+        <th> Options </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% (@approved + @denied).each do |admin| %>
+        <tr>
+          <td>
+            <h4>
+              <%= admin.email %>
+            </h4>
+          </td>
+          <td>
+            <% if admin.approved %>
+              <span class="label label-success">ADMIN</span>
+            <% end %>
+          </td>
+          <td>
+            <div class="row">
+              <div class="col-md-6">
+                <%= button_to "Delete", [:admins, admin], :class => "btn btn-danger btn-xs btn-block", :method => :delete, data: {confirm: "Are you sure?"} %>
+              </div>
+              <div class="col-md-6">
+                <% if admin.approved %>
+                  <%= form_for(admin, url: admins_admin_path(admin), html: {method: "PUT"}) do |f| %>
+                    <%= f.hidden_field :approved, :value => false %>
+                    <%= f.submit "Deny", :class => "btn btn-warning btn-xs btn-block", data: {confirm: "Are you sure?"} %>
+                  <% end %>
+                <% else %>
+                  <%= form_for(admin, url: admins_admin_path(@post), html: {method: "PUT"}) do |f| %>
+                    <%= f.hidden_field :approved, :value => true %>
+                    <%= f.submit "Approve", :class => "btn btn-info btn-xs btn-block", data: {confirm: "Are you sure?"} %>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+ 

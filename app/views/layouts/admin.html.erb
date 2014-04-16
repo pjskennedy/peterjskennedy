@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pjsk admin</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "admin", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyCQzCi54upbyRTUSgT4V1TGjMLbGuwDxB8&sensor=false" %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+
+<div class="title-banner">
+  <span class="title">
+    PETER KENNEDY
+    <br/>
+    <i class="fa fa-lightbulb-o"></i>
+    <br/>
+    SOFTWARE ENGINEER
+  </span>
+</div>
+
+<p class="contact-icons">
+  <a class="contact-link" href="http://twitter.com/peterjskennedy" target="_blank"><i class="fa fa-twitter"></i></a>
+  <a class="contact-link" href="http://www.linkedin.com/pub/peter-kennedy/46/880/943" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a class="contact-link" href="http://github.com/pjskennedy" target="_blank"><i class="fa fa-github"></i></a>
+  <br/>
+</p>
+
+<div class="main-container">
+  <%= yield %>
+</div>
+
+</body>
+</html>

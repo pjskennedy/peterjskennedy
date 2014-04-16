@@ -1,0 +1,36 @@
+
+<%= link_to "See Other Posts", admins_posts_path, :class => "pull-right" %>
+<br/>
+<%= link_to "Main Admin Menu", admin_path, :class => "pull-right" %>
+<div class="row">
+  
+  <br/><br/>
+
+  <% flash.each do |type, ff| %>
+    <div class="alert alert-<%=type%>"><%=ff%></div>
+  <% end %>
+
+
+  <br/>
+  <div class="col-sm-4 col-xs-12">
+    <%= link_to "Edit", edit_admins_post_path(@post), :class => "btn btn-primary btn-small btn-block", :method => "get" %>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <%= button_to "Delete", admins_post_path(@post), :class => "btn btn-danger btn-small btn-block", :method => :delete, data: {confirm: "Are you sure?"} %>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <% if @post.public? %>
+      <%= form_for(@post, url: admins_post_path(@post), html: {method: "PUT"}) do |f| %>
+        <%= f.hidden_field :is_public, :value => false %>
+        <%= f.submit "Hide from public", :class => "btn btn-warning btn-small btn-block", data: {confirm: "Are you sure?"} %>
+      <% end %>
+    <% else %>
+      <%= form_for(@post, url: admins_post_path(@post), html: {method: "PUT"}) do |f| %>
+        <%= f.hidden_field :is_public, :value => true %>
+        <%= f.submit "Make Public", :class => "btn btn-info btn-small btn-block", data: {confirm: "Are you sure?"} %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<%= @template %>

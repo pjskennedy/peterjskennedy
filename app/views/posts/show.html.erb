@@ -1,0 +1,30 @@
+
+<div class="post-container">
+  <% if @post.nil? %>
+    <h2 style="text-align:center;"> No Posts ... yet! </h2>
+  <% else %>
+    <div class="post animated fadeInRight">
+      <div class="post-header">
+        <div class="icon-column">
+          <i class="fa fa-play"></i>
+        </div>
+        <div class="title-column">
+          <h1 class="post-title">
+            <b><%=@post.title%></b>
+          </h1>
+          <small class="post-location">
+
+            <a href="http://maps.google.com/?q=<%=@post.latitude%>,<%=@post.longitude%>" target="_blank">
+              <i class="fa fa-map-marker"></i> &nbsp; 
+              <%=@post.coordinates%> on <%= @post.posted_at.strftime("%b %-d, %Y") %>
+            </a>
+          </small>
+          <br/>
+        </div>
+      </div>
+      <div class="post-body-text">
+        <%=@post.compile%>
+      </div>
+    </div>
+  <% end %>
+</div>
