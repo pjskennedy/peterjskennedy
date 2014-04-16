@@ -24,12 +24,12 @@
         indent: -$post-title-size;
         .post-location {
           a { color: #444; }
-          font-weight: 400;
+          font-weight: 300;
           font-size: 15px;
         }
         .post-title {
           color: #222;
-          font-weight: 400;
+          font-weight: 300 !important;
           font-size: 60px;
           margin-bottom: 5px;
           .date {
