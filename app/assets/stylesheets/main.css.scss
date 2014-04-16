@@ -107,6 +107,10 @@ a.contact-link {
   -webkit-transition: border-bottom .1s ease-in-out; 
 }
 
+p {
+  font-size: 16px;
+}
+
 @media only screen and (max-device-width: 480px) {
   .post-body-text {
     padding-left: 0px !important;
