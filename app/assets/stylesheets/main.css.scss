@@ -40,14 +40,18 @@ body {
 }
 
 .contact-icons {
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(20, 20, 20, 0.75);
-  -moz-box-shadow:    0px 0px 5px 0px rgba(20, 20, 20, 0.75);
-  box-shadow:         0px 0px 5px 0px rgba(20, 20, 20, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  
   background-color: #eee;
   padding: 20px;
 }
 
 .title {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
   text-align: center;
   font-family: Lato;
   color: #eee;
