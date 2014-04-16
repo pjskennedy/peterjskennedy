@@ -58,8 +58,12 @@
 
     .post {
       .post-title, .icon-column {
+
         font-size: 30px !important;
         text-decoration: none;
+      }
+      .post-title b {
+        font-weight: 300 !important;
       }
       .title-column a {
         text-decoration: none;
